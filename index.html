@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Encriptador</title>
+</head>
+<header>
+    <div class="title">
+        <h2>Encriptador de texto</h2>
+    </div>
+    <img class="logo" src="Logo.png">
+</header>
+<body>
+    <form id="formulario">
+           <input type="text" id="word" class="txt-word" placeholder="Ingrese la frase">
+        </form>
+
+   <section class="container">
+       <img src="Muñeco.svg" class="img-looking">
+       <div>
+        <label class="lb-info" id="info">No se encontro ninguna palabra</label><br>
+        <label class="txt-encript" id="text-encript"></label><br>  
+        <div>
+             <button type="submit" onclick="copiarAlPortapapeles('text-encript')" class="btn-copy" id="copy">Copiar</button>
+        </div>  
+       </div>
+   </section>
+
+   <div class="buttons">
+       <button type="submit" onclick="encriptar()" class="encriptar" id="btn-encript">Encriptar</button>
+   <button type="submit" onclick="desencriptar()" class="desencriptar" id="btn-desencriptar">Desencriptar</button>
+   </div>
+    <script src="index.js"></script>
+</body>
+</html>
